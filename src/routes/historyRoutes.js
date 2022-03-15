@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const convert = require('../controllers/convertController.js');
+const history = require('../controllers/historyController.js');
 const protect = require('../middleware/authMiddleware.js');
 
-router.route('/convert').post(protect, convert);
+router.route('/history').post(protect, history);
 
 module.exports = router;
