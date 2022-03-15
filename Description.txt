@@ -1,0 +1,6 @@
+First of all: I know that the .env file must be ignored in the ".gitignore" file. But I let the file to faclity your process of testing the endpoints without any need for setting your local variables or your mongoDB URL. After the interview I will ignore the file.
+
+1) Anyone can register by passing an email, password and name. The server will reply with his info and a token.
+2) The registerd one can login in by his email and password.
+3) The loggedIn user can convert from any currency to another by passing: from, to and amount fileds. He must be loggedIn to do the convertation So He have to pass in the token with the request.
+4) The LoggedIn user can know his history of convertering operation and he can filter the operation by the "to" or "from" fileds.
